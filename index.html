@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PEPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="./res/css/bootstrap.min.css">
+<link rel="stylesheet" href="./res/css/jquery-ui.css">
+<link rel="stylesheet" href="./res/css/font-awesome.css">
+
+<script src="./res/js/jquery-2.2.4.js"></script>
+<script src="./res/js/bootstrap.min.js"></script>
+
+<script src="./res/js/jquery-ui.js"></script>
+<script src="./res/js/lodash.min.js"></script>
+<script src="./res/js/jquery.query-object.js"></script>
+
+<link rel="icon" type="image/png" href="./favicon.png"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151770333-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151770333-1');
+</script>
+
+<style>
+  body, html {
+    height: 100%;
+  }
+</style>
+
+<script>
+  $(document).ready(function() {
+    if ($(".navbar-toggler").is(':visible')) $(".navbar-toggler").click();
+  });
+</script>
+<style>
+  .flexRow {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    justify-content: center;
+  }
+
+  .webCard {
+    width: 175px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+    color: white;
+    cursor: pointer;
+    height: 120px;
+  }
+
+  .webCard>.card-body {
+    vertical-align: middle;
+    display: table;
+    height: 100%;
+    padding: 0px;
+  }
+
+  .webCard .card-text {
+    display: table-cell;
+    vertical-align: middle;
+  }
+
+</style>
+</head>
+<body style="margin: 0px; background-color: #eee; position: relative;">
+<nav class="navbar navbar-dark bg-dark shadow-sm navbar-expand-md show" style="    min-width: 330px;">
+  <a class="navbar-brand" href="./">PEPT.org</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Videos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./training-videos">Perioperative EP Training Videos</a>
+          <a class="dropdown-item" href="./reprogramming-videos">Demo Videos for Reprogramming ICDs</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Reference Sheets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./mgh-process">MGH DACCPM Credentialing Process</a>
+          <a class="dropdown-item" href="./mgh-fellow-training">MGH Cardiac Anesthesia Fellow Training Program</a>
+          <a class="dropdown-item" href="./credentialing">MGH DACCPM Credentialing Documents</a>
+          <a class="dropdown-item" href="./documentation">Recommended Chart Documentation</a>
+          <a class="dropdown-item" href="./magnet">Magnet Summary Sheets</a>
+          <a class="dropdown-item" href="./manufacturer-contact">Manufacturer Contact Info</a>
+          <a class="dropdown-item" href="./interrogation">Standard Interrogation Document</a>
+          <a class="dropdown-item" href="./cart">Perioperative EP Programmer Cart</a>
+          <a class="dropdown-item" href="./important-articles">Recommended Journal Articles</a>
+          <a class="dropdown-item" href="./text-books">Recommended Texts</a>
+          <a class="dropdown-item" href="./written-exams">Perioperative Written Exam</a>
+          <a class="dropdown-item" href="./hrs-exam">HRS Cardiac Rhythm Device Therapy Exam for the Physician</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Device-Specific Info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./what-device">What Type of Device does my Patient Have?</a>
+          <a class="dropdown-item" href="./medtronic-5392">Medtronic 5392 Temporary Pacemaker Manual</a>
+        </div>
+      </li>
+      <li class="nav-item" style="margin-right: 5px;">
+        <a class="nav-link" href="./case-blog">Educational Cases</a>
+      </li>
+      <li class="nav-item">
+        <a id="feedback" class="nav-link btn bg-success" target="_blank" href="mailto:sstreckenbach@mgh.harvard.edu" style="color: white; padding: 5px; max-width: 100px; margin-top: 3px;">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div class="container" style="background-color: #eee; margin-top: 20px;">
+  <div style="margin-top: 10px; margin-left: 0px; margin-right: 10px;">
+    <h3 style="display: block;margin-bottom: 20px;">Perioperative EP Training Program</h3>
+  </div>
+  <div>
+    <h5>Welcome to the Perioperative Electrophysiology Training Program website, which is designed to help anesthesiologists learn how to manage pacemakers and ICDs in the perioperative period.  In this website you will find the Credentialing Process we use at the MGH, the lectures that are required for this credentialing process, and much more.</h5>
+  </div>
+  <div class="flexRow" style="margin-top: 20px;">
+    <a href="./mgh-process"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">MGH DACCPM Credentialing Process</p>
+    </div></div></a>
+    <a href="./mgh-fellow-training"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">MGH Cardiac Anesthesia Fellow Training Program</p>
+    </div></div></a>
+    <a href="./credentialing"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">MGH DACCPM Credentialing Documents</p>
+    </div></div></a>
+    <a href="./training-videos"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Perioperative EP Training Videos</p>
+    </div></div></a>
+    <a href="./text-books"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Recommended Texts</p>
+    </div></div></a>
+    <a href="./important-articles"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Recommended Journal Articles</p>
+    </div></div></a>
+    <a href="./magnet"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Magnet Summary Sheets</p>
+    </div></div></a>
+    <a href="./cart"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Perioperative EP Programmer Cart</p>
+    </div></div></a>
+    <a href="./interrogation"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Standard Interrogation Document</p>
+    </div></div></a>
+    <a href="./documentation"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Recommended Chart Documentation</p>
+    </div></div></a>
+    <a href="./reprogramming-videos"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Demo Videos for Reprogramming ICDs</p>
+    </div></div></a>
+    <a href="./manufacturer-contact"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Manufacturer Contact Info</p>
+    </div></div></a>
+    <a href="./updates"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Updates</p>
+    </div></div></a>
+    <a href="./written-exams"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Perioperative Written Exam</p>
+    </div></div></a>
+    <a href="./hrs-exam"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">HRS Cardiac Rhythm Device Therapy Exam for the Physician</p>
+    </div></div></a>
+    <a href="./medtronic-5392"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">Medtronic 5392 Temporary Pacemaker</p>
+    </div></div></a>
+    <a href="./what-device"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">What Type of Device does my Patient Have?</p>
+    </div></div></a>
+    <a href="./res/MGH DACCPM Pacemaker ICD Preop Evaluation Form.pdf"><div class="card webCard bg-success"><div class="card-body">
+      <p class="card-text">MGH DACCPM CIED Preop Evaluation Form</p>
+    </div></div></a>
+  </div>
+  <div>
+    <h5 style="margin-top: 30px;">If you have questions about anything on this site, please feel free to contact me at <a target="_blank" href="mailto:sstreckenbach@mgh.harvard.edu">sstreckenbach@mgh.harvard.edu</a></h5>
+  </div>
+</div>
+
+</body>
+</html>

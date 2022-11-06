@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PEPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="./res/css/bootstrap.min.css">
+<link rel="stylesheet" href="./res/css/jquery-ui.css">
+<link rel="stylesheet" href="./res/css/font-awesome.css">
+
+<script src="./res/js/jquery-2.2.4.js"></script>
+<script src="./res/js/bootstrap.min.js"></script>
+
+<script src="./res/js/jquery-ui.js"></script>
+<script src="./res/js/lodash.min.js"></script>
+<script src="./res/js/jquery.query-object.js"></script>
+
+<link rel="icon" type="image/png" href="./favicon.png"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151770333-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151770333-1');
+</script>
+
+<style>
+  body, html {
+    height: 100%;
+  }
+</style>
+
+<script>
+  $(document).ready(function() {
+    if ($(".navbar-toggler").is(':visible')) $(".navbar-toggler").click();
+  });
+</script>
+</head>
+<body style="margin: 0px; background-color: #eee; position: relative;">
+<nav class="navbar navbar-dark bg-dark shadow-sm navbar-expand-md show" style="    min-width: 330px;">
+  <a class="navbar-brand" href="./">PEPT.org</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Videos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./training-videos">Perioperative EP Training Videos</a>
+          <a class="dropdown-item" href="./reprogramming-videos">Demo Videos for Reprogramming ICDs</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Reference Sheets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./mgh-process">MGH DACCPM Credentialing Process</a>
+          <a class="dropdown-item" href="./mgh-fellow-training">MGH Cardiac Anesthesia Fellow Training Program</a>
+          <a class="dropdown-item" href="./credentialing">MGH DACCPM Credentialing Documents</a>
+          <a class="dropdown-item" href="./documentation">Recommended Chart Documentation</a>
+          <a class="dropdown-item" href="./magnet">Magnet Summary Sheets</a>
+          <a class="dropdown-item" href="./manufacturer-contact">Manufacturer Contact Info</a>
+          <a class="dropdown-item" href="./interrogation">Standard Interrogation Document</a>
+          <a class="dropdown-item" href="./cart">Perioperative EP Programmer Cart</a>
+          <a class="dropdown-item" href="./important-articles">Recommended Journal Articles</a>
+          <a class="dropdown-item" href="./text-books">Recommended Texts</a>
+          <a class="dropdown-item" href="./written-exams">Perioperative Written Exam</a>
+          <a class="dropdown-item" href="./hrs-exam">HRS Cardiac Rhythm Device Therapy Exam for the Physician</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Device-Specific Info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./what-device">What Type of Device does my Patient Have?</a>
+          <a class="dropdown-item" href="./medtronic-5392">Medtronic 5392 Temporary Pacemaker Manual</a>
+        </div>
+      </li>
+      <li class="nav-item" style="margin-right: 5px;">
+        <a class="nav-link" href="./case-blog">Educational Cases</a>
+      </li>
+      <li class="nav-item">
+        <a id="feedback" class="nav-link btn bg-success" target="_blank" href="mailto:sstreckenbach@mgh.harvard.edu" style="color: white; padding: 5px; max-width: 100px; margin-top: 3px;">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div style="width:100%; margin: 0px; position: absolute; min-width: 330px;">
+
+<div class="container" style="background-color: #eee;">
+  <div style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+    <h3 style="display: block;margin-bottom: 20px;">What Type of Device does my Patient Have?</h3>
+
+    <p>What type of Device does my Patient Have?</p>
+
+    <p>If your patient does not know the manufacturer for his or her device and does not have a device ID card, there are several ways you can determine the manufacturer.</p>
+    <ol>
+      <li>Look at the CXR and use the manufacturer specific identifiers</li>
+      <ol type="a">
+        <li>Use zoom to enlarge the device in the CXR.  Each manufacturer has a unique alpha-numeric or symbolic identifier—see image below from Jacob et al (also see lecture #9 for more info)</li>
+        <li>Use the paper “Cardiac Rhythm Device Identification Algorithm using X-Rays: CaRDIA-X by Jacob et. al.)” to help you if the identifier is not clearly discernible.</li>
+      </ol>
+      <li>Look at the CXR and use the “Pacemaker-ID“ phone application</li>
+      <li>If there is no CXR or the CXR methods above failed you can use a magnet to help you by following these steps:</li>
+      <ol type="a">
+        <li>Before using the magnet, place the patient on an EKG monitor. </li>
+        <li>If the patient’s intrinsic heart rate is > 85, do not use this method.</li>  
+        <li>Place the magnet on the patient’s device</li>
+        <li>If the paced HR does not change, the device is most likely an ICD:</li>
+        <ol type="i">
+          <li>If there is a continual beeping tone, the ICD is Boston Scientific</li>
+          <li>If there is a monotone (or alternating high low tone) for approximately 15 seconds the ICD is Medtronic</li>
+          <li>If there is no tone, the ICD is most likely either Abbott/St Jude or Biotronik</li>
+        </ol>
+        <li>If pacing begins or the pacing rate increases, the device is almost certainly a pacemaker and the manufacturer depends on the pacing rate:</li>
+        <ol type="i">
+          <li>If the paced HR is 85 the pacer is Medtronic</li>
+          <li>If the paced HR is 90 the pacer is Biotronik</li>
+          <li>If the paced HR is 96 the pacer is Sorin</li>
+          <li>If the paced HR is 98 the pacer is Abbott/St Jude</li>
+          <li>If the paced HR is 100 the pacer is Abbott /St Jude or Boston Scientific</li>
+          <li>As the battery in pacers depletes, the paced HR will eventually decrease.  Some change by slowly decreasing toward the battery end of life rate (Boston Scientific and St Jude).  Others change in a binary fashion (Medtronic to 60 and Biotronik to 80).<br>
+          <img src="./res/img/TypeOfDevice.png" style="width: 400px; margin-top: 10px;">
+          </li>
+        </ol>
+      </ol>
+    </ol>
+
+    <a href="./res/What type of Device does my Patient Have.pdf" target="_blank"></a>
+      <img src="./res/img/What type of Device does my Patient Have.png" class="card" style="width: 100%; text-align: center; max-width: 600px; margin-left: auto; margin-right: auto; display: block; margin-top: 60px;"></img>
+    </a>
+  </div>
+</div>
+
+</body>
+</html>

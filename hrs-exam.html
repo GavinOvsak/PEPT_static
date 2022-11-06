@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PEPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="./res/css/bootstrap.min.css">
+<link rel="stylesheet" href="./res/css/jquery-ui.css">
+<link rel="stylesheet" href="./res/css/font-awesome.css">
+
+<script src="./res/js/jquery-2.2.4.js"></script>
+<script src="./res/js/bootstrap.min.js"></script>
+
+<script src="./res/js/jquery-ui.js"></script>
+<script src="./res/js/lodash.min.js"></script>
+<script src="./res/js/jquery.query-object.js"></script>
+
+<link rel="icon" type="image/png" href="./favicon.png"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151770333-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151770333-1');
+</script>
+
+<style>
+  body, html {
+    height: 100%;
+  }
+</style>
+
+<script>
+  $(document).ready(function() {
+    if ($(".navbar-toggler").is(':visible')) $(".navbar-toggler").click();
+  });
+</script>
+</head>
+<body style="margin: 0px; background-color: #eee; position: relative;">
+<nav class="navbar navbar-dark bg-dark shadow-sm navbar-expand-md show" style="    min-width: 330px;">
+  <a class="navbar-brand" href="./">PEPT.org</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Videos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./training-videos">Perioperative EP Training Videos</a>
+          <a class="dropdown-item" href="./reprogramming-videos">Demo Videos for Reprogramming ICDs</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Reference Sheets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./mgh-process">MGH DACCPM Credentialing Process</a>
+          <a class="dropdown-item" href="./mgh-fellow-training">MGH Cardiac Anesthesia Fellow Training Program</a>
+          <a class="dropdown-item" href="./credentialing">MGH DACCPM Credentialing Documents</a>
+          <a class="dropdown-item" href="./documentation">Recommended Chart Documentation</a>
+          <a class="dropdown-item" href="./magnet">Magnet Summary Sheets</a>
+          <a class="dropdown-item" href="./manufacturer-contact">Manufacturer Contact Info</a>
+          <a class="dropdown-item" href="./interrogation">Standard Interrogation Document</a>
+          <a class="dropdown-item" href="./cart">Perioperative EP Programmer Cart</a>
+          <a class="dropdown-item" href="./important-articles">Recommended Journal Articles</a>
+          <a class="dropdown-item" href="./text-books">Recommended Texts</a>
+          <a class="dropdown-item" href="./written-exams">Perioperative Written Exam</a>
+          <a class="dropdown-item" href="./hrs-exam">HRS Cardiac Rhythm Device Therapy Exam for the Physician</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Device-Specific Info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./what-device">What Type of Device does my Patient Have?</a>
+          <a class="dropdown-item" href="./medtronic-5392">Medtronic 5392 Temporary Pacemaker Manual</a>
+        </div>
+      </li>
+      <li class="nav-item" style="margin-right: 5px;">
+        <a class="nav-link" href="./case-blog">Educational Cases</a>
+      </li>
+      <li class="nav-item">
+        <a id="feedback" class="nav-link btn bg-success" target="_blank" href="mailto:sstreckenbach@mgh.harvard.edu" style="color: white; padding: 5px; max-width: 100px; margin-top: 3px;">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div style="width:100%; margin: 0px; position: absolute; min-width: 330px;">
+
+<div class="container" style="background-color: #eee;">
+  <div style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+    <h3 style="display: block;margin-bottom: 20px;">HRS Cardiac Rhythm Device Therapy Exam for the Physician</h3>
+
+    <h5>CCDS Exam</h5>
+    <p>The IBHRE Test Writing Committee and the National Board of Medical Examiners designed the CCDS certification examination. To maintain certification, participants must complete Verification of the Continuing Education once every five years and recertify by re-examination once every ten years.</p>
+    <br> 
+    <h5>About the Exam:</h5>
+    <p>This examination assesses essential clinical knowledge relevant to implanting pacemakers and ICDs and the diagnosis and treatment of patients who suffer from heart rhythm disorders. The exam consists of 200 multiple-choice questions and is administered within a five-hour time limit. Candidates should have broad knowledge in three general areas:</p>
+    <ul>
+      <li>Basic science</li>
+      <li>Applied science and technology</li>
+      <li>Clinical practice of cardiac pacing and management of tachy-arrhythmias by the implantable cardioverter-defibrillator (ICD)</li>
+    </ul>
+    <br> 
+    <h5>Target Audience:</h5>
+    <p>Physicians and physician fellows-in-training who implant pacemakers and implantable cardioverter defibrillators (ICDs) or perform electrophysiology studies.</p>
+    <ul>
+    <li>General Cardiologists</li>
+    <li>Electrophysiologists</li>
+    <li>Pediatricians</li>
+    <li>Internists</li>
+    <li>Surgeons</li>
+    <li>Cardiovascular specialists</li>
+    <li>Thoracic surgeons</li>
+    <li>Emergency care physicians</li>
+    <li>Anesthesiologists</li>
+    <li>Hospitalists</li>
+    <li>General practitioners</li>
+    </ul>
+    <br>
+    <h5>CCDS Exam Eligibility Policy</h5>
+    <p>The purpose of this policy is to articulate and define the standard eligibility requirement held by IBHRE to qualify for the above stated certification exam and the documentation required from candidates to prove eligibility.</p>
+    <br>
+    <h5>Criteria:</h5>
+    <p>Applicants for the Cardiac Rhythm Device Therapy Examination for the Physician must be a licensed physicians involved in the practice of heart rhythm management. Physicians applying for the certification must also:</p>
+    <ul>
+    <li>Have completed a fellowship in Cardiology (adult or pediatric) or Clinical Cardiac Electrophysiology</li>
+    OR
+    <li>Have documented a minimum of one year of direct, substantial involvement in the care of cardiac rhythm device therapy patients. Exposure includes a minimum of 100 device interrogations with reprogramming as needed. The devices should include pacemakers, implantable defibrillators, cardiac resynchronization devices and implantable loop recorders/cardiac monitors.</li>
+    </ul>
+    <br> 
+    <h5>Required Documentation:</h5>
+    Upon submitting an application for the exam, all candidates must provide appropriate documentation as evidence of the candidate’s eligibility:
+    <ul>
+    <li>Physicians must include a copy of their current medical license from the state, province or country where they currently practice with their application.</li>
+    <li>Physicians must include a copy of their certificate/diploma of completion of medical school and residency programs specifying dates of completion.</li>
+    <li>Physicians must include a certificate of completion of the necessary fellowship training program or attestation form a supervisor or colleague verifying direct involvement in managing device therapy for patients for a minimum of one year (refer to IBHRE's eligibility requirements). </li>
+    </ul>
+    <p>IBHRE reserves the right to independently verify the licenses, credentials and employment status of all examination candidates. The candidate’s signature on his or her examination application duly authorizes IBHRE to conduct such independent verification</p>
+    <p>See the IHBRE website for more info <a href="https://www.ibhre.org/" target="_blank">https://www.ibhre.org/</a></p>
+
+  </div>
+</div>
+
+</body>
+</html>

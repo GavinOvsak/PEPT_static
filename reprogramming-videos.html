@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PEPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="./res/css/bootstrap.min.css">
+<link rel="stylesheet" href="./res/css/jquery-ui.css">
+<link rel="stylesheet" href="./res/css/font-awesome.css">
+
+<script src="./res/js/jquery-2.2.4.js"></script>
+<script src="./res/js/bootstrap.min.js"></script>
+
+<script src="./res/js/jquery-ui.js"></script>
+<script src="./res/js/lodash.min.js"></script>
+<script src="./res/js/jquery.query-object.js"></script>
+
+<link rel="icon" type="image/png" href="./favicon.png"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151770333-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151770333-1');
+</script>
+
+<style>
+  body, html {
+    height: 100%;
+  }
+</style>
+
+<script>
+  $(document).ready(function() {
+    if ($(".navbar-toggler").is(':visible')) $(".navbar-toggler").click();
+  });
+</script>
+</head>
+<body style="margin: 0px; background-color: #eee; position: relative;">
+<nav class="navbar navbar-dark bg-dark shadow-sm navbar-expand-md show" style="    min-width: 330px;">
+  <a class="navbar-brand" href="./">PEPT.org</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Videos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./training-videos">Perioperative EP Training Videos</a>
+          <a class="dropdown-item" href="./reprogramming-videos">Demo Videos for Reprogramming ICDs</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Reference Sheets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./mgh-process">MGH DACCPM Credentialing Process</a>
+          <a class="dropdown-item" href="./mgh-fellow-training">MGH Cardiac Anesthesia Fellow Training Program</a>
+          <a class="dropdown-item" href="./credentialing">MGH DACCPM Credentialing Documents</a>
+          <a class="dropdown-item" href="./documentation">Recommended Chart Documentation</a>
+          <a class="dropdown-item" href="./magnet">Magnet Summary Sheets</a>
+          <a class="dropdown-item" href="./manufacturer-contact">Manufacturer Contact Info</a>
+          <a class="dropdown-item" href="./interrogation">Standard Interrogation Document</a>
+          <a class="dropdown-item" href="./cart">Perioperative EP Programmer Cart</a>
+          <a class="dropdown-item" href="./important-articles">Recommended Journal Articles</a>
+          <a class="dropdown-item" href="./text-books">Recommended Texts</a>
+          <a class="dropdown-item" href="./written-exams">Perioperative Written Exam</a>
+          <a class="dropdown-item" href="./hrs-exam">HRS Cardiac Rhythm Device Therapy Exam for the Physician</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Device-Specific Info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./what-device">What Type of Device does my Patient Have?</a>
+          <a class="dropdown-item" href="./medtronic-5392">Medtronic 5392 Temporary Pacemaker Manual</a>
+        </div>
+      </li>
+      <li class="nav-item" style="margin-right: 5px;">
+        <a class="nav-link" href="./case-blog">Educational Cases</a>
+      </li>
+      <li class="nav-item">
+        <a id="feedback" class="nav-link btn bg-success" target="_blank" href="mailto:sstreckenbach@mgh.harvard.edu" style="color: white; padding: 5px; max-width: 100px; margin-top: 3px;">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div style="width:100%; margin: 0px; position: absolute; min-width: 330px;">
+
+<div class="container" style="background-color: #eee;">
+  <div style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+    <h3 style="display: block;margin-bottom: 20px;">Demo Videos for Reprogramming ICDs</h3>
+
+    <h5>The videos below demonstrate how to turn off ICDs from each of the ICD manufacturers.</h5>
+    <p>Prior to ever turning off an ICD, remember to have an immediately available method
+    to defibrillate the patient in the event of a dysrhythmia. This usually means having
+    external defibrillation pads attached to the patient and connected to a defibrillator
+    and in the hands of an anesthesia caregiver who is facile with the defibrillator.</p>
+    <p>When selecting a video to watch, the key question to answer first is whether or not
+    you need to convert the patient’s pacer to asynchronous pacing. If you want to
+    convert an Abbott/St Jude or Medtronic ICD to asynchronous pacing, you must
+    first turn off the ICD’s anti-tachy function. Neither device will allow you to convert
+    to DOO or VOO with the ICD active.</p>
+    <p>Turning off a Biotronik ICD is easy if you do not need to convert the device to DOO
+    or VOO pacing—you simply push one button. If however you need to convert a
+    Biotronik ICD to DOO or VOO pacing, you must turn off the ICD in a more prolonged
+    manner, turning off each zone in the ICD parameters. The two videos will
+    demonstrate this difference.</p>
+    <p>Boston Scientific ICDs can be turned off in two ways, either turning off the
+    defibrillator only or converting the ICD to the electrocautery safe mode. If the
+    patient will have a DDD or VVI (or any demand mode), you will simply turn the
+    defibrillator off. If you want to have the patient pace in DOO or VOO, you must use
+    the electrocautery safe mode. The videos below will demonstrate these differences.</p>
+
+    <div>
+      <h5 style="display: inline-block; margin-right: 5px;">Device Type:</h5>
+      <select id="videoSelect" class="form-control" style="width: auto; display: inline-block;">
+        <option value="video1">Abbott/SJM tachy therapy OFF</option>
+        <option value="video2">Abbott/SJM tachy therapy OFF and DOO pacing</option>
+        <option value="video3">Biotronik tachy therapy OFF</option>
+        <option value="video4">Biotronik tachy therapy OFF and DOO pacing</option>
+        <option value="video5">Boston Sci tachy therapy OFF </option>
+        <option value="video6">Boston Sci tachy therapy OFF and DOO pacing</option>
+        <option value="video7">Boston Sci Sub Q ICD therapy off</option>
+        <option value="video8">Medtronic tachy therapy OFF</option>
+        <option value="video9">Medtronic tachy therapy OFF and VOO pacing</option>
+      </select>
+    </div>
+    <br>
+
+    <!-- St Jude Abbott ICD off.mov -->
+    <video id="video1" class="video" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/St+Jude+Abbott+ICD+off.mov" style="width: 100%; max-width: 600px; display: none;"></video>
+
+    <!-- St Jude Abbott ICD off and DOO.mov -->
+    <video id="video2" class="video" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/St+Jude+Abbott+ICD+off+and+DOO.mov" style="width: 100%; max-width: 600px; display: none;"></video>
+
+    <!-- Medtronic tachy therapy off-->
+    <video id="video8" class="video" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/Medtronic+tachy+therapy+OFF.mov" style="width: 100%; max-width: 600px; display: none;"></video>
+
+    <!-- Medtronic tachy therapy off and VOO-->
+    <video id="video9" class="video" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/Medtronic+tachy+therapy+off+and+VOO.mov" style="width: 100%; max-width: 600px; display: none;"></video>
+
+    <!-- Boston Scientific tachy therapy off-->
+    <video id="video5" class="video" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/Boston+Sci+tachy+off.mp4" style="width: 100%; max-width: 600px; display: none;"></video>
+
+    <!-- Boston Scientific tachy and doo-->
+    <video id="video6" class="video" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/Boston+Sci+tachy+and+doo.mp4" style="width: 100%; max-width: 600px; display: none;"></video>
+
+    <!-- Biotronik tachy therapy OFF-->
+    <video id="video3" class="video" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/Biotronik+ATT+only.mp4" style="width: 100%; max-width: 600px; display: none;"></video>
+   
+    <!-- Biotronik tachy therapy OFF and DOO pacing-->
+    <video id="video4" class="video" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/Biotronik+Att+and+Doo.mp4" style="width: 100%; max-width: 600px; display: none;"></video>
+
+
+    <!-- Video Medtronic ICD alert.MOV -->
+    <!-- <video id="video3" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/Video+Medtronic+ICD+alert.MOV" style="width: 100%; max-width: 600px; display: none;"></video> -->
+
+    <!-- Video Bost Sci ICD.MOV -->
+    <!-- <video id="video7" controls="" src="https://mghcag.s3.us-east-2.amazonaws.com/Video+Bost+Sci+ICD.MOV" style="width: 100%; max-width: 600px; display: none;"></video> -->
+
+    <h5 id="video3" class="video">Coming Soon!</h5>
+    <h5 id="video4" class="video">Coming Soon!</h5>
+    <h5 id="video5" class="video">Coming Soon!</h5>
+    <h5 id="video6" class="video">Coming Soon!</h5>
+    <h5 id="video7" class="video">Coming Soon!</h5>
+    
+    
+
+  </div>
+</div>
+
+<script>
+  var vidId = 'video1';
+  var refresh = function() {
+    $('.video').hide();
+    $('#' + vidId).show();
+  };
+
+  $(function() {
+    $('#videoSelect').on('change', function() {
+      vidId = $('#videoSelect').val();
+      refresh();
+    });
+    refresh();
+  });
+</script>
+</body>
+</html>

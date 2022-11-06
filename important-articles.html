@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>PEPT</title>
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+<link rel="stylesheet" href="./res/css/bootstrap.min.css">
+<link rel="stylesheet" href="./res/css/jquery-ui.css">
+<link rel="stylesheet" href="./res/css/font-awesome.css">
+
+<script src="./res/js/jquery-2.2.4.js"></script>
+<script src="./res/js/bootstrap.min.js"></script>
+
+<script src="./res/js/jquery-ui.js"></script>
+<script src="./res/js/lodash.min.js"></script>
+<script src="./res/js/jquery.query-object.js"></script>
+
+<link rel="icon" type="image/png" href="./favicon.png"/>
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151770333-1"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+
+  gtag('config', 'UA-151770333-1');
+</script>
+
+<style>
+  body, html {
+    height: 100%;
+  }
+</style>
+
+<script>
+  $(document).ready(function() {
+    if ($(".navbar-toggler").is(':visible')) $(".navbar-toggler").click();
+  });
+</script>
+</head>
+<body style="margin: 0px; background-color: #eee; position: relative;">
+<nav class="navbar navbar-dark bg-dark shadow-sm navbar-expand-md show" style="    min-width: 330px;">
+  <a class="navbar-brand" href="./">PEPT.org</a>
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+    <ul class="navbar-nav mr-auto">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Videos
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./training-videos">Perioperative EP Training Videos</a>
+          <a class="dropdown-item" href="./reprogramming-videos">Demo Videos for Reprogramming ICDs</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Reference Sheets
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./mgh-process">MGH DACCPM Credentialing Process</a>
+          <a class="dropdown-item" href="./mgh-fellow-training">MGH Cardiac Anesthesia Fellow Training Program</a>
+          <a class="dropdown-item" href="./credentialing">MGH DACCPM Credentialing Documents</a>
+          <a class="dropdown-item" href="./documentation">Recommended Chart Documentation</a>
+          <a class="dropdown-item" href="./magnet">Magnet Summary Sheets</a>
+          <a class="dropdown-item" href="./manufacturer-contact">Manufacturer Contact Info</a>
+          <a class="dropdown-item" href="./interrogation">Standard Interrogation Document</a>
+          <a class="dropdown-item" href="./cart">Perioperative EP Programmer Cart</a>
+          <a class="dropdown-item" href="./important-articles">Recommended Journal Articles</a>
+          <a class="dropdown-item" href="./text-books">Recommended Texts</a>
+          <a class="dropdown-item" href="./written-exams">Perioperative Written Exam</a>
+          <a class="dropdown-item" href="./hrs-exam">HRS Cardiac Rhythm Device Therapy Exam for the Physician</a>
+        </div>
+      </li>
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+          Device-Specific Info
+        </a>
+        <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+          <a class="dropdown-item" href="./what-device">What Type of Device does my Patient Have?</a>
+          <a class="dropdown-item" href="./medtronic-5392">Medtronic 5392 Temporary Pacemaker Manual</a>
+        </div>
+      </li>
+      <li class="nav-item" style="margin-right: 5px;">
+        <a class="nav-link" href="./case-blog">Educational Cases</a>
+      </li>
+      <li class="nav-item">
+        <a id="feedback" class="nav-link btn bg-success" target="_blank" href="mailto:sstreckenbach@mgh.harvard.edu" style="color: white; padding: 5px; max-width: 100px; margin-top: 3px;">Feedback</a>
+      </li>
+    </ul>
+  </div>
+</nav>
+
+<div style="width:100%; margin: 0px; position: absolute; min-width: 330px;">
+
+<div class="container" style="background-color: #eee;">
+  <div style="margin-top: 10px; margin-left: 10px; margin-right: 10px;">
+    <h3 style="display: block;margin-bottom: 20px;">Recommended Journal Articles</h3>
+
+    <h5>Useful Articles for the Beginning Perioperative Electrophysiologist</h5>
+
+    <h5>1. Crossley GH, Poole JE, Rozner MA et al. The Heart Rhythm Society Expert Consensus Statement on the perioperative management of patients with implantable defibrillators, pacemakers and arrhythmia monitors: Facilities and patient management. Heart Rhythm 2011;8:1114-54</h5>
+    <h5>2. ASA Task Force on Perioperative Management of Patients with Cardiac Implantable Electronic Devices: Practice advisory for the perioperative management of patients with cardiac implantable electronic devices: Pacemakers and ICDs. Anesthesiology 2011;114:247-61</h5>
+    <h5>3. Rooke GA, Lombaard SA, Van Norman GA, et al. Initial experience of an anesthesiology-based service for perioperative management of pacemakers and implantable cardioverter defibrillators. Anesthesiology 2015;123:1024- 32</h5>
+    <h5>4. Ellis MKM, Treggiari MM, Robertson JM, et al. Process improvement initiative for the perioperative management of patients with a cardiovascular implantable electronic device. Anesth Analg 2017;125:58-65</h5>
+    <h5>5. Schulman PM, Treggiari MM, Yanez ND, et al. Electromagnetic interference with protocolized electrosurgery dispersive electrode positioning in patients with implantable cardioverter defibrillators. Anesthesiology 2019;130:530- 40</h5>
+    <h5>6. Cronin B, Dalia A, Sandoval K, et al. Perioperative interrogation of Biotronik cardiovascular implantable electronic devices: A guide for anesthesiologists. JCVA in press (describes how to modify the magnet response mode for pacers)</h5>
+    <h5>7. Cronin B, Birgersdottir-Green U, Essandoh MK. Perioperative interrogation of Boston Scientific cardiovascular implantable electronic devices: A guide for anesthesiologists. JCVA 2019;33:1076-1089</h5>
+    <h5>8. Cronin B, Essandoh MK. Perioperative interrogation of St Jude cardiovascular implantable electronic devices: A guide for anesthesiologists. JCVA 2018;32:982-1000</h5>
+    <h5>9. Cronin B, Essandoh MK. Update on cardiovascular implantable electronic devices for anesthesiologists. JCVA 2018;32:1871-1884 (update on leadless pacers and sub-Q ICD—reports the 60 second issue and the different position of the magnet) </h5>
+    <h5>10. Schulman PM, Rozner MA. Use caution when applying magnets to pacemakers or defibrillators for surgery. Anesth Analg 2013;117:422 (Case report on complications with magnets used to inhibit ICDs and alter pacing mode in pacers)</h5>
+    <h5>11. Frieman H, Higgins JV, Ryan JD et al. Predictors of intraoperative electrosurgery-induced implantable cardioverter defibrillator detection. J Interv Card Electrophysiol 2017;48:21-26. (study looking at ICD detection of cautery during non-cardiac surgery)</h5>
+    <h5>12. Gifford J, Larimer K, Thomas C et al. ICD-On registry for perioperative management of ICEDs: Most require no change. PACE 2017;40:128-134 (study looking at ICD detection during surgery)</h5>
+    <h5>13. Rozner MA, Kahl EA, Schulman PM. Inappropriate implantable cardioverter defibrillator therapy during surgery: An important and preventable complication. JCVA 2017;31:1037-41</h5>
+    <h5>14. Healey JS, Merchant RM, Simpson C, et al. Canadian cardiovascular society/Canadian anesthesiologists’ society/Canadian heart rhythm society joint position statement on the perioperative management of patients with implanted pacemakers and defibrillators. Canadian Journal of Cardiology 2012;28:141-51.</h5>
+    <h5>15. Izrailtyan I, Schiller RJ, Katz RI et al. Perioperative pacemaker-mediated tachycardia in the patient with a dual chamber implantable cardioverter defibrillator. Anesth Analg 201;116:307-10</h5>
+    <h5>16. Practice Advisory for the Perioperative  Management of Patients with Cardiac Implantable Electronic Devices: Pacemakers and Implantable Cardioverter–Defibrillators 2020. Anesthesiology 2020, 132:225-52.</h5>
+
+  </div>
+</div>
+
+</body>
+</html>
